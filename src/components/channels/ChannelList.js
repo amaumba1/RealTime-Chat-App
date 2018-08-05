@@ -1,5 +1,7 @@
 import React from 'react'
+import {PropTypes} from 'prop-types';
 import Channel from './Channel'; 
+
 
 const ChannelList = (props) => {
     return (
@@ -19,4 +21,9 @@ const ChannelList = (props) => {
     )
 }
 
+ChannelList.propTypes = {
+    channels: PropTypes.array.isRequired,
+    setChannel: PropTypes.func.isRequired,
+    activeChannel: PropTypes.object.isRequired
+}
 export default ChannelList; 

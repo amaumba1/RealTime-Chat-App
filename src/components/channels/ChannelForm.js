@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-
+import React, {Component} from 'react';
+import {PropTypes} from 'prop-types';
 
 class ChannelForm extends Component {
 
@@ -25,6 +25,10 @@ class ChannelForm extends Component {
             </form> 
         )
     }
+}
+
+ChannelForm.propTypes = {
+    addChannel: PropTypes.func.isRequired
 }
 
 export default ChannelForm; 
